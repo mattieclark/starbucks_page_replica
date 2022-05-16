@@ -16,7 +16,7 @@
         <div class="circle"></div>
 
         <header>
-            <a href="#"><img src="images/logo.png" rel="logo" /></a>
+            <a id="logo" href="#"><img src="images/logo.png" rel="logo" /></a>
             <ul>
                 <li><a href="#"> Home</a> </li>
                 <li><a href="#"> Menu</a> </li>
@@ -38,6 +38,7 @@
 
             <div class="imgBox">
                 <img class="imgStarbucs" src="images/img1.png" rel="drink" />
+                <div class="wink"></div>
             </div>
         </div>
 
@@ -79,7 +80,7 @@
         let shake2Text = "Pink Frappee is even nicer"
 
         let shake3 = document.querySelector("#thumb3");
-        let shake3Text = "This one Turns you into a Unicorn, and who doesn't want that!"
+        let shake3Text = "This one turns you into a Unicorn, and who doesn't want that!"
 
         shake1.addEventListener("click", function () {
             imgSlider('images/img1.png'); changeCircleColor('#017143')
@@ -95,6 +96,22 @@
             imgSlider('images/img3.png'); changeCircleColor('#eb7495')
             text.innerHTML = shake3Text;
         });
+
+
+
+
+
+
+
+    //    let wink =  document.querySelector(".imgStarbucs");
+    //         while(wink.src = images/img3.png){
+    //             wink.addEventListener("hover", function(){
+    //                 wink.classList.add.animation.blink;
+    //             });
+    //         }
+
+           
+    
 
 
 
