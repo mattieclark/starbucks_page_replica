@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family:'Poppins',sans-serif;
+}
+section{
+    position: relative;
+    width:100%;
+    padding:100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+position: relative;
+display: flex;
+}
+header ul li{
+    list-style: none;
+}
+
+
+
+header ul li a{
+    display: inline-block;
+    color: #454851;
+    font-weight: 400;
+    margin-left:40px;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    transform:scale(120%);
+    transition: 0.5s;
+}
+
+.content{
+    position: relative;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .textbox h2 {
+    color: #454851;
+    font-size: 1.5em;
+    line-height: 1.5rem;
+}
+
+
+.content .textbox h2 span {
+    color:#017143;
+    font-size: 4em;
+    line-height: 5rem;
+    margin-top: 4rem;
+}
+
+
+.content .textbox a{
+    display: inline-block;
+    margin:20px;
+    padding:20px;
+    background-color: #017143;
+    color:#fff;
+    border-radius: 40px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .textbox a:hover{
+    font-weight: 400;
+    transition: 0.1s;
+}
+
+.content .imgBox{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+   }
+
+.imgStarbucs{
+    max-width: 400px;
+    max-height: 580px;
+
+}
+
+.thumbs{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    bottom:0;
+    left: 400px;
+}
+
+.thumbs li{
+    list-style: none;
+}
+
+.thumbs li:hover {
+    transform: translateY(-20px);    
+}
+
+.socialMedia{
+    list-style: none;
+    filter:invert(1)
+}
+
+.socialMedia li a img:hover{
+    transform:scale(120%);
+    transition: 0.5s;    
+}
+
+.circle {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #017143; 
+    clip-path:circle(600px at right 800px);
+
+}
+
+
+
+

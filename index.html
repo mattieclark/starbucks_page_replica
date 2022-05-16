@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <section>
+
+        <div class="circle"></div>
+
+        <header>
+            <a href="#"><img src="images/logo.png" rel="logo" /></a>
+            <ul>
+                <li><a href="#"> Home</a> </li>
+                <li><a href="#"> Menu</a> </li>
+                <li><a href="#"> Whats New</a> </li>
+                <li><a href="#"> Contact Us</a> </li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textbox">
+                <h2>This is not <br> ordinary coffee, it's <br> <span class="starbucs">Starbucs</span></h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quia eveniet fugiat molestias,
+                    voluptates exercitationem earum aliquid voluptas. Praesentium perspiciatis numquam alias cum
+                    temporibus totam autem debitis vitae voluptate expedita. </p>
+
+                <a href="index.html" rel="noopener noreferer">Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <img class="imgStarbucs" src="images/img1.png" rel="drink" />
+            </div>
+        </div>
+
+        <ul class="thumbs">
+            <li id="thumb1"><a href="#"></a><img src="images/thumb1.png" alt=""></a></li>
+            <li id="thumb2"><a href="#"></a><img src="images/thumb2.png" alt=""></a></li>
+            <li id="thumb3"><a href="#"></a><img src="images/thumb3.png" alt=""></a></li>
+
+
+        </ul>
+
+        <ul class="socialMedia">
+            <li><a><img src="images/facebook.png" alt="" /></a></li>
+            <li><a><img src="images/twitter.png" alt="" /></a></li>
+            <li><a><img src="images/instagram.png" alt="" /></a></li>
+        </ul>
+
+
+
+
+    </section>
+
+    <script>
+
+        function imgSlider(anything) {
+            document.querySelector(".imgStarbucs").src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector(".circle");
+            circle.style.background = color;
+        }
+
+        let text = document.querySelector(".textbox p");
+        let shake1 = document.querySelector("#thumb1");
+        let shake1Text = "Green Frappee is very very nice"
+
+        let shake2 = document.querySelector("#thumb2");
+        let shake2Text = "Pink Frappee is even nicer"
+
+        let shake3 = document.querySelector("#thumb3");
+        let shake3Text = "This one Turns you into a Unicorn, and who doesn't want that!"
+
+        shake1.addEventListener("click", function () {
+            imgSlider('images/img1.png'); changeCircleColor('#017143')
+            text.innerHTML = shake1Text;
+        });
+
+        shake2.addEventListener("click", function () {
+            imgSlider('images/img2.png'); changeCircleColor('#eb7495')
+            text.innerHTML = shake2Text;
+        });
+
+        shake3.addEventListener("click", function () {
+            imgSlider('images/img3.png'); changeCircleColor('#eb7495')
+            text.innerHTML = shake3Text;
+        });
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
