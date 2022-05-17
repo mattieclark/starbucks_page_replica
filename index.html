@@ -41,6 +41,7 @@
                 <div class="wink"></div>
             </div>
         </div>
+        </div>
 
         <ul class="thumbs">
             <li id="thumb1"><a href="#"></a><img src="images/thumb1.png" alt=""></a></li>
@@ -101,18 +102,39 @@
         let Wink = document.querySelector('.imgBox .wink');
         let mainImage = document.querySelector('.imgStarbucs');
 
-        if (text.innerHTML == shake3Text) {
-            mainImage.addEventListener("hover", function () {
-                Wink.classList.add('.Blink');
 
-            }); 
-        }
 
-        else {            
-            Wink.classList.remove('.Blink');
-        };
+        mainImage.addEventListener("mouseover", function () {
 
-       
+
+
+            if (text.innerHTML == shake3Text) {
+                Wink.classList.add('Blink');
+            }
+            else {
+                Wink.classList.remove('Blink');
+            }
+
+
+        });
+
+
+
+
+
+
+
+        // if (text.innerHTML == shake3Text) {
+        //     mainImage.addEventListener("hover", function () {
+        //         Wink.classList.add('.Blink');
+        //     });
+        // }
+
+        //     else {
+        //         Wink.classList.remove('.Blink');
+        //     };
+
+
 
 
 
