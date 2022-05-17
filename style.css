@@ -177,12 +177,12 @@ header ul li a:hover {
     max-height: 580px;
 }
 
-.imgBox .wink {
+.Blink {
     width: 400px;
     height: 580px;
     background-size: 100% 100%;
     position: absolute;
-    animation: blink 0.5s;
+    animation: blink 0.9s;
 
 }
 

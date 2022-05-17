@@ -74,44 +74,42 @@
 
         let text = document.querySelector(".textbox p");
         let shake1 = document.querySelector("#thumb1");
-        let shake1Text = "Green Frappee is very very nice"
+        let shake1Text = "Green Frappee is very very nice!"
 
         let shake2 = document.querySelector("#thumb2");
-        let shake2Text = "Pink Frappee is even nicer"
+        let shake2Text = "Pink Frappee is even nicer!"
 
         let shake3 = document.querySelector("#thumb3");
         let shake3Text = "This one turns you into a Unicorn, and who doesn't want that!"
 
         shake1.addEventListener("click", function () {
-            imgSlider('images/img1.png'); changeCircleColor('#017143')
+            imgSlider('images/img1.png'); changeCircleColor('#017143');
             text.innerHTML = shake1Text;
         });
 
         shake2.addEventListener("click", function () {
-            imgSlider('images/img2.png'); changeCircleColor('#eb7495')
+            imgSlider('images/img2.png'); changeCircleColor('#eb7495');
             text.innerHTML = shake2Text;
         });
 
         shake3.addEventListener("click", function () {
-            imgSlider('images/img3.png'); changeCircleColor('#eb7495')
+            imgSlider('images/img3.png'); changeCircleColor('#eb7495');
             text.innerHTML = shake3Text;
         });
 
 
+        let Wink = document.querySelector('.imgBox .wink');
+        let mainImage = document.querySelector('.imgStarbucs');
+
+        if (text.innerHTML = shake3Text) {
+            mainImage.addEventListener("hover",function(){
+                Wink.classList.add('.Blink');
+
+            });
+        }
 
 
 
-
-
-    //    let wink =  document.querySelector(".imgStarbucs");
-    //         while(wink.src = images/img3.png){
-    //             wink.addEventListener("hover", function(){
-    //                 wink.classList.add.animation.blink;
-    //             });
-    //         }
-
-           
-    
 
 
 
